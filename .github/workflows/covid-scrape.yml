@@ -5,7 +5,7 @@ on:
     - cron: '5 * * * *'  # At 20:00 on day-of-month 25
 
 jobs:
-  nakama-scrape:
+  covid-scrape:
     runs-on: macOS-latest
     env:
       ATLAS_URL: ${{ secrets.ATLAS_URL }}
