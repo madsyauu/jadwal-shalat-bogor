@@ -15,14 +15,6 @@ url <- "https://www.worldometers.info/coronavirus/country/indonesia/"
 html <- read_html(url)
 count <- html_text(html_nodes(html, ".maincounter-number"), trim=T)
 
-# collection <- "cities"
-# db <- "prak12"
-# url <- "mongodb://localhost:27017/"
-# cities <- mongo(
-#   collection=collection, 
-#   db=db, 
-#   url=url
-# )
 
 message("Connect to MongoDB Cloud")
 atlas <- mongo(
@@ -32,11 +24,8 @@ atlas <- mongo(
 )
 
 # covid <- data.frame(no=integer(), cases=character(), deaths=character(), recovered=character())
-newcovid <- data.frame(no = atlas$count() + 1, cases = count[1], deaths = count[2], recovered = count[3])
-
 message("Store data frame into mongo cloud")
-if(atlas$count() > 0)
-  atlas$drop()
+newcovid <- data.frame(no = atlas$count() + 1, cases = count[1], deaths = count[2], recovered = count[3])
 atlas$insert(newcovid)
 
 atlas$disconnect()
