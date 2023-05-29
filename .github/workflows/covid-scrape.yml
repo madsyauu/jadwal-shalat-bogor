@@ -1,0 +1,22 @@
+name: Daily Scraping Covid
+
+on:
+  schedule:
+    - cron: '5 * * * *'  # At 20:00 on day-of-month 25
+
+jobs:
+  nakama-scrape:
+    runs-on: macOS-latest
+    env:
+      MONGO_CLOUD_URL: ${{ secrets.MONGO_CLOUD_URL }}
+      MONGO_CLOUD_COLLECTION: ${{ secrets.MONGO_CLOUD_COLLECTION }}
+      MONGO_CLOUD_DB: ${{ secrets.MONGO_CLOUD_DB }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@master
+      - name: Install mongolite package
+        run: Rscript -e 'install.packages("mongolite", dependencies = TRUE)'
+      - name: Install rvest package
+        run: Rscript -e 'install.packages("rvest", dependencies = TRUE)'        
+      - name: Scrape data 
+        run: Rscript scrape.R
