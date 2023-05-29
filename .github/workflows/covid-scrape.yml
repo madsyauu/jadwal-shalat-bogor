@@ -8,9 +8,9 @@ jobs:
   nakama-scrape:
     runs-on: macOS-latest
     env:
-      MONGO_CLOUD_URL: ${{ secrets.MONGO_CLOUD_URL }}
-      MONGO_CLOUD_COLLECTION: ${{ secrets.MONGO_CLOUD_COLLECTION }}
-      MONGO_CLOUD_DB: ${{ secrets.MONGO_CLOUD_DB }}
+      ATLAS_URL: ${{ secrets.ATLAS_URL }}
+      ATLAS_COLLECTION: ${{ secrets.ATLAS_COLLECTION }}
+      ATLAS_DB: ${{ secrets.ATLAS_DB }}
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@master
