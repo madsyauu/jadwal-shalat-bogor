@@ -9,8 +9,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Menceritakan tentang situs web yang discraping.
 
 
-## Contoh Dokumen yang disimpan ke dalam MongoDB
+## Contoh dokumen 
 
+Berikut ini adalah contoh dokumen pada koleksi MongoDB yang sudah tersimpan
+
+```
 {"_id":
   {"$oid":"64748315df0bae6a4b05efd1"},
   "no": {
@@ -20,3 +23,4 @@ Menceritakan tentang situs web yang discraping.
   "deaths":"161,739",
   "recovered":"6,631,118"
 }
+```
