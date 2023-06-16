@@ -1,28 +1,56 @@
-# Jadwal Shalat Bogor (Daily Scraping)
 
-[![Daily Scraping Covid](https://github.com/sta1562/mongo-covid/actions/workflows/covid-scrape.yml/badge.svg)](https://github.com/sta1562/mongo-covid/actions/workflows/covid-scrape.yml)
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-## Deskripsi 
-
-Menceritakan tentang situs web yang discraping.
-
-
-## Contoh dokumen 
-
-Berikut ini adalah contoh dokumen pada koleksi MongoDB yang sudah tersimpan
-
-```
-{"_id":
-  {"$oid":"64748315df0bae6a4b05efd1"},
-  "no": {
-    "$numberDouble":"2.0"
-  },
-  "cases":"6,806,288",
-  "deaths":"161,739",
-  "recovered":"6,631,118"
-}
-```
+<div align="center">
 ## Badges
 [![Jadwal Shalat Bogor](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml/badge.svg)](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml)
+
+# Jadwal Shalat Bogor
+
+• [Tentang Jadwal Shalat Bogor](#memo-tentang-jadwal-shalat-bogor)
+• [Demo](#video_camera-demo)
+• [Dokumentasi](#blue_book-dokumentasi)
+
+</div>
+
+## :bookmark_tabs: Main Menu
+
+- [Tentang Data Pangan dan Scrapping](#memo-tentang-jadwal-shalat-bogor)
+- [Scrapping](#camera_flash-screenshot)
+- [Demo](#video_camera-demo)
+- [Pengembang](#fireworks-anggota-tim-pengembang)
+
+<div align="justify">
+ 
+## :memo: Tentang Jadwal Shalat Bogor
+ 
+*Project* ini merupakan integrasi antara **R - MongoDB Atlas - Python** yang meliputi *scraping* data dengan `rvest` pada R. Data yang digunakan pada project ini adalah jadwal shalat bogor. Data tersebut diperoleh dari hasil scrapping dan google dengan link: [https://hargapangan.id/](https://jadwal-sholat.tirto.id/kota-bogor)
+
+Jadwal imsakiyah Kota Bogor menjadi panduan bagi umat Islam dalam mengerjakan sholat fardhu, yaitu shalat subuh, zuhur, ashar, maghrib, dan isya pada awal waktu sesuai sunnah. Diriwayatkan, ketika Rasulullah ﷺ ditanya soal amalan apa yang paling utama, Beliau ﷺ menjawab "Shalat pada awal waktu".
+
+Sholat fardhu bisa dilaksanakan di masjid atau sendiri (munfarid) di rumah. Bagi umat Islam yang laki-laki, mengerjakan sholat fardhu di masjid secara berjemaah lebih utama. Nabi Muhammad ﷺ bersabda, "Sholat berjamaah lebih afdal daripada shalat sendirian dengan perbandingan 27 derajat."
+
+ 
+## :video_camera: Demo
+| url                           | login                  |
+| ----------------------------- | ---------------------- |
+|https://github.com/madsyauu | sokinter5@gmail.com |
+
+ 
+```
+{"_id":{"$oid":"648c8306dff878b23105e934"},"no":{"$numberDouble":"1.0"},"tanggal":"Jumat, 16 Juni 2023","subuh":"04:40","dhuha":"06:27","dzuhur":"11:57","ashar":"15:18","maghrib":"17:53","isya":"19:03"}
+```
+
+ 
+## :video_camera: Requirements
+ 
+<div align="justify">
+- Paket R yang digunakan:
+ 
+ * library(rvest) : Tools untuk scraping dengan cara parsing HTML dari suatu laman HTML. 
+ 
+ * library(tidyverse) : membantu dalam manajemen data terutama pada impor dan ekspor data, serta pemodelan dan visualisasi data. Dalam package ini memungkinkan penggunaan operator pipes (%>%) untuk memudahkan dalam memahami script
+ 
+ * library(mongolite) : MongoDB client untuk R yang berbasis mongo-c-driver dan jsonlite. Package ini mendukung fungsi agregasi, indexing, map-reduce, streaming, enkripsi,autentikasi, serta GridFS.
+ 
+
+## :fireworks: Pengembang
+ Ahmad Syauqi    (G1501221019)
