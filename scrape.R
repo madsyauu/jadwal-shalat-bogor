@@ -7,7 +7,6 @@ message("Define function to scrape Jadwal Shalat Bogor")
 url <- "https://jadwal-sholat.tirto.id/kota-bogor"
 html <- read_html(url)
 shalat <- html %>% html_elements('tr.table-content-sholat.currDate')%>% html_elements('td') %>% html_text(trim = T)
-shalat
 
 
 message("Connect to MongoDB Cloud")
