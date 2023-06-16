@@ -7,14 +7,12 @@
 
 • [Tentang Jadwal Shalat Bogor](#memo-tentang-jadwal-shalat-bogor)
 • [Demo](#video_camera-demo)
-• [Dokumentasi](#blue_book-dokumentasi)
 
 </div>
 
 ## :bookmark_tabs: Main Menu
 
 - [Tentang Data Pangan dan Scrapping](#memo-tentang-jadwal-shalat-bogor)
-- [Scrapping](#camera_flash-screenshot)
 - [Demo](#video_camera-demo)
 - [Pengembang](#fireworks-anggota-tim-pengembang)
 
