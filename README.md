@@ -1,7 +1,7 @@
 
 <div align="center">
 ## Badges
-[![Jadwal Shalat Bogor](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml/badge.svg)](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml)
+[![Scrape Jadwal Shalat Bogor](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml/badge.svg)](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml)
 
 # Jadwal Shalat Bogor
 
