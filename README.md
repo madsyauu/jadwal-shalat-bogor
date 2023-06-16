@@ -46,8 +46,6 @@ Sholat fardhu bisa dilaksanakan di masjid atau sendiri (munfarid) di rumah. Bagi
  
  * library(rvest) : Tools untuk scraping dengan cara parsing HTML dari suatu laman HTML. 
  
- * library(tidyverse) : membantu dalam manajemen data terutama pada impor dan ekspor data, serta pemodelan dan visualisasi data. Dalam package ini memungkinkan penggunaan operator pipes (%>%) untuk memudahkan dalam memahami script
- 
  * library(mongolite) : MongoDB client untuk R yang berbasis mongo-c-driver dan jsonlite. Package ini mendukung fungsi agregasi, indexing, map-reduce, streaming, enkripsi,autentikasi, serta GridFS.
  
 
