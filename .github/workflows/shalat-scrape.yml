@@ -1,8 +1,8 @@
-name: Jadwal Shalat Bogor
+name: Scrape Jadwal Shalat Bogor
 
 on:
   schedule:
-    - cron: '* * * * *'  # every day at 00.01
+    - cron: '* * * * *'  # every 7 minutes
 
 
 jobs:
