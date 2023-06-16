@@ -21,9 +21,9 @@
  
 ## :memo: Tentang Jadwal Shalat Bogor
  
-*Project* ini merupakan integrasi antara **R - MongoDB Atlas - Python** yang meliputi *scraping* data dengan `rvest` pada R. Data yang digunakan pada project ini adalah jadwal shalat bogor. Data tersebut diperoleh dari hasil scrapping dan google dengan link: [Jadwal Shalat](https://jadwal-sholat.tirto.id/kota-bogor)
+*Project* ini merupakan integrasi antara **R - MongoDB Atlas - Python** yang meliputi *scraping* data dengan `rvest` pada R. Data yang digunakan pada project ini adalah jadwal shalat bogor. Data tersebut diperoleh dari hasil scrapping dari link: [Jadwal Shalat](https://jadwal-sholat.tirto.id/kota-bogor)
 
-Jadwal imsakiyah Kota Bogor menjadi panduan bagi umat Islam dalam mengerjakan sholat fardhu, yaitu shalat subuh, zuhur, ashar, maghrib, dan isya pada awal waktu sesuai sunnah. Diriwayatkan, ketika Rasulullah ﷺ ditanya soal amalan apa yang paling utama, Beliau ﷺ menjawab "Shalat pada awal waktu".
+Jadwal Shalat Kota Bogor menjadi panduan bagi umat Islam dalam mengerjakan sholat fardhu, yaitu shalat subuh, zuhur, ashar, maghrib, dan isya pada awal waktu sesuai sunnah. Diriwayatkan, ketika Rasulullah ﷺ ditanya soal amalan apa yang paling utama, Beliau ﷺ menjawab "Shalat pada awal waktu".
 
 Sholat fardhu bisa dilaksanakan di masjid atau sendiri (munfarid) di rumah. Bagi umat Islam yang laki-laki, mengerjakan sholat fardhu di masjid secara berjemaah lebih utama. Nabi Muhammad ﷺ bersabda, "Sholat berjamaah lebih afdal daripada shalat sendirian dengan perbandingan 27 derajat."
 
