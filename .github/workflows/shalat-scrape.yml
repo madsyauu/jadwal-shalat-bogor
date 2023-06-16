@@ -2,7 +2,7 @@ name: Jadwal Shalat Bogor
 
 on:
   schedule:
-    - cron: '1 0 * * *'  # every day at 00.01
+    - cron: '23 22 * * *'  # every day at 00.01
 
 
 jobs:
