@@ -3,17 +3,11 @@ message("Load the libraries")
 library(rvest)
 library(mongolite)
 
-# List of covid sites
-# https://news.google.com/covid19/map
-# https://www.worldometers.info/coronavirus/country/indonesia/
-# https://corona.jakarta.go.id/id/data-pemantauan
-# https://kawalcovid19.id/
-# https://covid19.go.id/peta-sebaran
-
-message("Define function to scrape OP character")
-url <- "https://www.worldometers.info/coronavirus/country/indonesia/"
+message("Define function to scrape Jadwal Shalat Bogor")
+url <- "https://jadwal-sholat.tirto.id/kota-bogor"
 html <- read_html(url)
-count <- html_text(html_nodes(html, ".maincounter-number"), trim=T)
+shalat <- html %>% html_elements('tr.table-content-sholat.currDate')%>% html_elements('td') %>% html_text(trim = T)
+shalat
 
 
 message("Connect to MongoDB Cloud")
@@ -23,9 +17,9 @@ atlas <- mongo(
   url        = Sys.getenv("ATLAS_URL")
 )
 
-# covid <- data.frame(no=integer(), cases=character(), deaths=character(), recovered=character())
+
 message("Store data frame into mongo cloud")
-newcovid <- data.frame(no = atlas$count() + 1, cases = count[1], deaths = count[2], recovered = count[3])
-atlas$insert(newcovid)
+jadwal_shalat <- data.frame(no = atlas$shalat() + 1, tanggal = shalat[1], subuh = shalat[2], dhuha = shalat[3], dzuhur = shalat[4], ashar = shalat[5], maghrib = shalat[6], isya = shalat[7])
+atlas$insert(jadwal_shalat)
 
 atlas$disconnect()
