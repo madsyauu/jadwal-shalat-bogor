@@ -19,7 +19,7 @@ atlas <- mongo(
 
 
 message("Store data frame into mongo cloud")
-jadwal_shalat <- data.frame(no = atlas$shalat() + 1, tanggal = shalat[1], subuh = shalat[2], dhuha = shalat[3], dzuhur = shalat[4], ashar = shalat[5], maghrib = shalat[6], isya = shalat[7])
+jadwal_shalat <- data.frame(no = atlas$count() + 1, tanggal = shalat[1], subuh = shalat[2], dhuha = shalat[3], dzuhur = shalat[4], ashar = shalat[5], maghrib = shalat[6], isya = shalat[7])
 atlas$insert(jadwal_shalat)
 
 atlas$disconnect()
