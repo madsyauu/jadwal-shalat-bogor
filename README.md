@@ -24,3 +24,5 @@ Berikut ini adalah contoh dokumen pada koleksi MongoDB yang sudah tersimpan
   "recovered":"6,631,118"
 }
 ```
+## Badges
+[![Jadwal Shalat Bogor](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml/badge.svg)](https://github.com/madsyauu/jadwal-shalat-bogor/actions/workflows/shalat-scrape.yml)
